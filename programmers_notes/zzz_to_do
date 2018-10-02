@@ -1,0 +1,32 @@
+# Done 
+--- earlier 
+- look at "myself" works * Late september
+- rooms now list things * Late september 
+--- 28 september 18
+- ignores punctuation from player input, so it won't affect the parser 
+- set provisional verb placeholder functions 
+--- 29 september 18
+- take and hold (grab) something begins to wor * done on 29 september 18
+- added profanity filter 
+- rooms lists exits
+--- 30 september 18
+- add debugging logger (not game logger)
+- added scold
+--- 1 october
+- many thigs :)
+----2 october
+- things display now its open/closed status
+- things can be opened (don't check if locked though)
+# To do
+- open thing (things must check if locked)
+- close
+- read
+
+# ---- make this into a function 
+   predicate = predicate.remove_small_words  
+    candidates = compare_phrases_with_words(whats_here, predicate)
+    if candidates[:found].size == 1
+        my_thing = @things[candidates[:found].head]
+        # what if more than one cadidate????
+# end make this into a function
+

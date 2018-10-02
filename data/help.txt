@@ -1,0 +1,44 @@
+
+This is a very old-fashioned game. Instead of point at click at something you type the command and the object that should act on it.
+# game commands
+- answer [text] to [somebody]
+- ask [somebody] about [something]
+- buy  [something]
+- character sheet: Shows your character sheet 
+- close [object] (c) [object] : close something
+- down  (D): go down
+- drink    : drink something
+- drop  (d): drop something held
+- east  (E): go east
+- eat [something]  (E): eat somthing 
+- examine (x) [something]: examine some object
+- give [something] to [someone]
+- help  (h): Shows this help
+- inventory (i): Shows your equipment list
+- look : (L) look around (re-read the description)
+- listen: (l) listen attentively for subtle sounds
+- meditate (m)
+- north (N): go north
+- open [object] (o) [object] : open something
+- quit  (Q): Quit the game
+- pray
+- pull [something]
+- put [something] in/on [something_else] : 
+- push [something] (direction) :
+- restart      : new game
+- restore (R)  : restore (load) an old game
+- save  (s): saves the game
+- set [something] to [something]
+- show show [something] to [someone]
+- sit on [something] :
+- say [text] 
+- swim (direction)
+- take [object]  (t) [object] : hold something in your hands
+- take [something] off
+- taste [something]
+- tell [somebody] about [something]
+- south (S): go south
+- up    (U): go up 
+- wait (z)
+- wear [something]
+- west  (W): go west

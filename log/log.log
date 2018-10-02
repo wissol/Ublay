@@ -1,0 +1,947 @@
+I, [2018-10-01T15:32:24.099089 #133]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-01T15:32:24.100660 #133]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055cdb39ab628 @desc="A cheap cupboard marked 'Tools'", @carry=nil, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x000055cdb39aafe8 @desc="A boring wooden chair", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x000055cdb39aa9a8 @desc="An old table that could have came from Narnia.", @carry=nil, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x000055cdb39aa638 @desc="a red box of interesting design", @carry=nil, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x000055cdb39a9f58 @desc="ACME key, medium size", @carry=nil, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x000055cdb39a9e18 @desc="A simple student desk", @carry=nil, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>, "red sword"=>#<Thing:0x000055cdb39a9be8 @desc="A red sword", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "big hammer"=>#<Thing:0x000055cdb39a9a30 @desc="A big bad hammer", @carry=nil, @weight=19, @in=[], @on=[], @open=false, @alt_id=[]>, "small hammer"=>#<Thing:0x000055cdb39a9940 @desc="A small hammer", @carry=nil, @weight=2, @in=[], @on=[], @open=false, @alt_id=[]>}
+
+I, [2018-10-01T15:32:24.102008 #133]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055cdb3990a30 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055cdb3990788 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-01T15:32:24.102382 #133]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055cdb3e0d900 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-01T15:32:28.653699 #133]  INFO -- : 
+
+pc 
+#<Player:0x000055cdb3e0d4a0 @name="N", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-01T15:32:32.453235 #133]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-01T15:35:14.123320 #255]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-01T15:35:14.124823 #255]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055ee55fc3930 @desc="A cheap cupboard marked 'Tools'", @carry=nil, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x000055ee55fc3890 @desc="A boring wooden chair", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x000055ee55fc35e8 @desc="An old table that could have came from Narnia.", @carry=nil, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x000055ee55fc2a58 @desc="a red box of interesting design", @carry=nil, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x000055ee55fc27d8 @desc="ACME key, medium size", @carry=nil, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x000055ee55fc2288 @desc="A simple student desk", @carry=nil, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>, "red sword"=>#<Thing:0x000055ee55fc2080 @desc="A red sword", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "big hammer"=>#<Thing:0x000055ee55fc1478 @desc="A big bad hammer", @carry=nil, @weight=19, @in=[], @on=[], @open=false, @alt_id=[]>, "small hammer"=>#<Thing:0x000055ee55fc0dc0 @desc="A small hammer", @carry=nil, @weight=2, @in=[], @on=[], @open=false, @alt_id=[]>}
+
+I, [2018-10-01T15:35:14.125471 #255]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055ee55ee9348 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055ee55ee92f8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-01T15:35:14.125787 #255]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055ee55ee2fc0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-01T15:35:17.728899 #255]  INFO -- : 
+
+pc 
+#<Player:0x000055ee55ee1c38 @name="N", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-01T15:35:22.705032 #255]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:14:58.560931 #47]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:14:58.562625 #47]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005587523bf270 @desc="A cheap cupboard marked 'Tools'", @carry=nil, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x00005587523befc8 @desc="A boring wooden chair", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x00005587523beca8 @desc="An old table that could have came from Narnia.", @carry=nil, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x00005587523be118 @desc="a red box of interesting design", @carry=nil, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x00005587523bda88 @desc="ACME key, medium size", @carry=nil, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x000055875230bce8 @desc="A simple student desk", @carry=nil, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>, "red sword"=>#<Thing:0x000055875230bbd0 @desc="A red sword", @carry=nil, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "big hammer"=>#<Thing:0x000055875230b5e0 @desc="A big bad hammer", @carry=nil, @weight=19, @in=[], @on=[], @open=false, @alt_id=[]>, "small hammer"=>#<Thing:0x000055875230af50 @desc="A small hammer", @carry=nil, @weight=2, @in=[], @on=[], @open=false, @alt_id=[]>}
+
+I, [2018-10-02T09:14:58.563233 #47]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000558752232088 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000558752231fc0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:14:58.563589 #47]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055875222c2a0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:15:04.359843 #47]  INFO -- : 
+
+pc 
+#<Player:0x000055875222a298 @name="Ys", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:15:08.936299 #47]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:15:22.074402 #47]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:15:55.811639 #47]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:16:06.238586 #47]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:26:33.751293 #221]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:26:33.752846 #221]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000563ba45a5d80 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x0000563ba45a5d30 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x0000563ba45a5b00 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x0000563ba45a59e8 @desc="a red box of interesting design", @container=false, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x0000563ba45a58d0 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x0000563ba45a3468 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>, "red sword"=>#<Thing:0x0000563ba45a2ce8 @desc="A red sword", @container=false, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "big hammer"=>#<Thing:0x0000563ba45a2a40 @desc="A big bad hammer", @container=false, @weight=19, @in=[], @on=[], @open=false, @alt_id=[]>, "small hammer"=>#<Thing:0x0000563ba45a1668 @desc="A small hammer", @container=false, @weight=2, @in=[], @on=[], @open=false, @alt_id=[]>}
+
+I, [2018-10-02T09:26:33.754039 #221]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000563ba4a0bd70 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000563ba4a0bd48 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:26:33.754332 #221]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000563ba4a09548 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:26:37.060702 #221]  INFO -- : 
+
+pc 
+#<Player:0x0000563ba4a08e18 @name="Ys", @age=15, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:26:47.188396 #221]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:26:56.296181 #226]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:26:56.297799 #226]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005605a5af9be0 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x00005605a5af9190 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x00005605a5af8d30 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x00005605a5af86f0 @desc="a red box of interesting design", @container=false, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x00005605a5a73ec8 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x00005605a5a71e20 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>, "red sword"=>#<Thing:0x00005605a5a70a48 @desc="A red sword", @container=false, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "big hammer"=>#<Thing:0x00005605a5a6e0e0 @desc="A big bad hammer", @container=false, @weight=19, @in=[], @on=[], @open=false, @alt_id=[]>, "small hammer"=>#<Thing:0x00005605a5a6c588 @desc="A small hammer", @container=false, @weight=2, @in=[], @on=[], @open=false, @alt_id=[]>}
+
+I, [2018-10-02T09:26:56.298472 #226]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005605a5a20548 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x00005605a5a204d0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:26:56.298819 #226]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005605a5a185c8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:27:02.695299 #226]  INFO -- : 
+
+pc 
+#<Player:0x00005605a5a16c28 @name="Ys", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:27:13.304599 #226]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:29:57.999821 #234]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:29:58.001183 #234]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000559abea2ed48 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @alt_id=["cupboard", "shed cupboard"]>, "wooden chair"=>#<Thing:0x0000559abe956588 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @alt_id=[]>, "table"=>#<Thing:0x0000559abe955430 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @alt_id=[]>, "red box"=>#<Thing:0x0000559abe9549b8 @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @alt_id=[]>, "ACME key"=>#<Thing:0x0000559abe943c08 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @alt_id=[]>, "student desk"=>#<Thing:0x0000559abe943528 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @alt_id=[]>}
+
+I, [2018-10-02T09:29:58.001837 #234]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000559abe80aa30 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000559abe80a710 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:29:58.002213 #234]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000559abe7ff540 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:30:02.451260 #234]  INFO -- : 
+
+pc 
+#<Player:0x0000559abe7fe348 @name="Ys", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:30:09.493158 #234]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T09:36:57.900735 #490]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:36:57.902104 #490]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000556f44e9a1c0 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=false, @key=nil>, "wooden chair"=>#<Thing:0x0000556f44dc3080 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "table"=>#<Thing:0x0000556f44dc1f28 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil>, "red box"=>#<Thing:0x0000556f44dc1848 @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "ACME key"=>#<Thing:0x0000556f44dc0d80 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "student desk"=>#<Thing:0x0000556f44daff08 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil>}
+
+I, [2018-10-02T09:36:57.902710 #490]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000556f44c798f0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000556f44c798a0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:36:57.903046 #490]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000556f44c6b980 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:37:04.049476 #490]  INFO -- : 
+
+pc 
+#<Player:0x0000556f44c6a508 @name="Y", @age=15, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:37:48.797260 #496]  INFO -- : ----------------------------
+Game starts
+D, [2018-10-02T09:37:48.798471 #496] DEBUG -- : Locked item A cheap cupboard marked 'Tools' but no key assigned, check things.yml
+I, [2018-10-02T09:38:59.359076 #500]  INFO -- : ----------------------------
+Game starts
+D, [2018-10-02T09:38:59.360286 #500] DEBUG -- : Locked item A cheap cupboard marked 'Tools' but no key assigned, check things.yml
+I, [2018-10-02T09:39:50.310759 #504]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T09:39:50.312253 #504]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000563606fabd50 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key">, "wooden chair"=>#<Thing:0x0000563606fab468 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "table"=>#<Thing:0x0000563606fa91e0 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil>, "red box"=>#<Thing:0x0000563606fa83f8 @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "ACME key"=>#<Thing:0x0000563606ef3d68 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil>, "student desk"=>#<Thing:0x0000563606ef3ac0 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil>}
+
+I, [2018-10-02T09:39:50.312914 #504]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000563606e1f018 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000563606e1efc8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T09:39:50.313289 #504]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000563606e15b80 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T09:39:56.819051 #504]  INFO -- : 
+
+pc 
+#<Player:0x0000563606e15090 @name="Ys", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T09:40:14.465920 #504]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T10:36:17.277987 #683]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T10:36:17.279400 #683]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000558d3af9f890 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000558d3af9f818 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000558d3af9f520 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000558d3af9f4d0 @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000558d3af9ec10 @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000558d3af9e710 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000558d3af9e418 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T10:36:17.279873 #683]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000558d3aec6838 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000558d3aec6798 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T10:36:17.280185 #683]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000558d3aebe908 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T10:36:20.132334 #683]  INFO -- : 
+
+pc 
+#<Player:0x0000558d3aebc928 @name="Ys", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T10:36:29.124278 #683]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T11:27:38.357150 #589]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T11:27:38.359087 #589]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055d6c284c5a8 @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055d6c284c2d8 @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055d6c284c008 @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055d6c284e0d8 @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055d6c284bc48 @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055d6c284ba40 @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055d6c284b2e8 @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T11:27:38.360124 #589]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055d6c2cbee10 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055d6c2cbede8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T11:27:38.360448 #589]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055d6c2cbc070 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T11:27:44.765202 #589]  INFO -- : 
+
+pc 
+#<Player:0x000055d6c2cbb580 @name="Ys", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T11:27:56.345882 #589]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T11:31:28.791767 #680]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T11:31:28.793274 #680]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055eea583ebd8 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055eea583e818 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055eea583e0e8 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055eea583cc98 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055eea5839ae8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055eea5839598 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055eea58391b0 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T11:31:28.793891 #680]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055eea58113e0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055eea5811390 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T11:31:28.794211 #680]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055eea5808ba0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T11:31:33.221791 #680]  INFO -- : 
+
+pc 
+#<Player:0x000055eea58081a0 @name="Ys", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T11:31:52.198252 #680]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T11:32:08.619204 #708]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T11:32:08.620800 #708]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000555ab83b1448 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000555ab83b0fe8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000555ab83b0728 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000555ab83afd78 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000555ab83a8b90 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000555ab83a7bc8 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000555ab83a72b8 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T11:32:08.621457 #708]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000555ab838a1e0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000555ab838b4c8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T11:32:08.622423 #708]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000555ab87fb670 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T11:32:12.966466 #708]  INFO -- : 
+
+pc 
+#<Player:0x0000555ab87fb1e8 @name="Ys", @age=15, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T11:32:21.596452 #708]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T11:34:00.968481 #708]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:00:59.174484 #39]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:00:59.176013 #39]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000562676a11e48 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000562676a11ab0 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000562676a115b0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000562676a114c0 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000562676a10e30 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000562676a0e310 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000562676a0dd20 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:00:59.176588 #39]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005626769df8a8 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x00005626769df7b8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:00:59.176967 #39]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005626769d51f0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:01:04.074835 #39]  INFO -- : 
+
+pc 
+#<Player:0x00005626769d45e8 @name="Yt", @age=15, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:01:16.338177 #39]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:03:23.985820 #243]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:03:23.987408 #243]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055eb09fedf18 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055eb09fed658 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055eb09fe6d08 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055eb09fde860 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055eb09fd3280 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055eb09fd1e80 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055eb09fd12a0 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:03:23.988101 #243]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055eb09f988b0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055eb09f98888 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:03:23.988488 #243]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055eb09f8ee28 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:03:26.628482 #243]  INFO -- : 
+
+pc 
+#<Player:0x000055eb09f8da00 @name="Y", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:03:35.758204 #243]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:07:27.723727 #464]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:07:27.725205 #464]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000556d3d9179b8 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000556d3d9175f8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000556d3d915410 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000556d3d914a60 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000556d3d912878 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000556d3d911ef0 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000556d3d90de40 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:07:27.725782 #464]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000556d3d8dc4d0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000556d3d8dc430 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:07:27.726092 #464]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000556d3d8d2f70 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:07:32.102696 #464]  INFO -- : 
+
+pc 
+#<Player:0x0000556d3d8d1d50 @name="Ys", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:07:42.872288 #464]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:08:02.750841 #496]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:08:02.752454 #496]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005631731e4948 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005631731e4790 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005631731e4498 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005631731e41c8 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005631731e49e8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005631731e39a8 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005631731e3570 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:08:02.753533 #496]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005631736566e8 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000563173656648 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:08:02.753839 #496]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000563173652f20 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:08:06.296056 #496]  INFO -- : 
+
+pc 
+#<Player:0x0000563173652a70 @name="Ys", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:08:12.991886 #496]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:08:31.345532 #519]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:08:31.347024 #519]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055b5b2abe8a8 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055b5b2abe678 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055b5b2abe268 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055b5b2abe100 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055b5b2abd4f8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055b5b2abd070 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055b5b2abc7b0 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:08:31.347615 #519]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055b5b29e18b8 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055b5b29e1890 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:08:31.347898 #519]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055b5b29d8ba0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:08:34.397378 #519]  INFO -- : 
+
+pc 
+#<Player:0x000055b5b29d6f58 @name="Ys", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:08:41.375875 #519]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:08:43.779252 #519]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:08:55.991741 #519]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:11:05.634006 #689]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T13:11:05.635728 #689]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055cea482ef38 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055cea482e808 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055cea482e560 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055cea482e128 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055cea482dc28 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055cea482d548 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055cea482ce68 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T13:11:05.636338 #689]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055cea480ef58 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055cea480edf0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T13:11:05.637237 #689]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055cea4c836b0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T13:11:12.765062 #689]  INFO -- : 
+
+pc 
+#<Player:0x000055cea4c832a0 @name="Ys", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T13:11:18.341147 #689]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T13:11:32.079299 #689]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T16:28:27.008106 #1143]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:28:27.013858 #1143]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000560791c8ed78 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000560791c8ea30 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000560791c8e3f0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000560791c8d068 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000560791c8cd20 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000560791c8ca28 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000560791c8b678 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:28:27.015304 #1143]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000560791c787a8 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000560791c786e0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:28:27.015673 #1143]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005607920f0d58 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:28:31.828228 #1143]  INFO -- : 
+
+pc 
+#<Player:0x00005607920f0510 @name="Yt", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:31:42.888594 #1267]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:31:42.890225 #1267]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005575c0ae36f8 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005575c0ae33d8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005575c0ae2fa0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005575c0ae2f50 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005575c0ae2c80 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005575c0ae2640 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005575c0ae2500 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:31:42.891514 #1267]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005575c0f5c748 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x00005575c0f5c6f8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:31:42.891817 #1267]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005575c0f59e80 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:31:45.752478 #1267]  INFO -- : 
+
+pc 
+#<Player:0x00005575c0f59a98 @name="Yr", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:32:00.864554 #1275]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:32:00.866220 #1275]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000564be78b4118 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000564be78b4050 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000564be78b3fb0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000564be78b3f60 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000564be78b3e70 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000564be78b3d58 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000564be78b3c68 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:32:00.867452 #1275]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000564be7d29310 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000564be7d292e8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:32:00.867764 #1275]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000564be7d263b8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:32:04.024608 #1275]  INFO -- : 
+
+pc 
+#<Player:0x0000564be7d25f58 @name="Y", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:32:25.852002 #1291]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:32:25.853580 #1291]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000563267360020 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000056326735fb98 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000056326735f7b0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000056326735ef68 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000056326735ea90 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000056326735e630 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000056326735de60 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:32:25.854209 #1291]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000563267346f08 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000563267346d50 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:32:25.855155 #1291]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005632677be888 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:32:28.096378 #1291]  INFO -- : 
+
+pc 
+#<Player:0x00005632677bd870 @name="Y", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:33:19.659193 #1310]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:33:19.661075 #1310]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000556d832f7600 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000556d832f6070 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000556d832f5580 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000556d832f47c0 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000556d832f2fd8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000556d832f2970 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000556d832f2358 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:33:19.661676 #1310]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000556d832dd8e0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000556d832dd7f0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:33:19.662577 #1310]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000556d837530f0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:33:22.727812 #1310]  INFO -- : 
+
+pc 
+#<Player:0x0000556d83752a60 @name="Y", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:42:49.608482 #1653]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:42:49.610079 #1653]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000558d86fc6908 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000558d86fc67c8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000558d86fc65c0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000558d86fc64f8 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000558d86fc6278 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000558d86fc6160 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000558d86fc5558 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:42:49.611300 #1653]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000558d86fb42f8 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000558d86fb4258 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:42:49.611618 #1653]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000558d8742c8a8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:42:53.084156 #1653]  INFO -- : 
+
+pc 
+#<Player:0x0000558d8742c2b8 @name="Y", @age=15, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:43:16.093587 #1672]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:43:16.095214 #1672]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055e42fe1e358 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055e42fe1d930 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055e42fe1d5e8 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055e42fe1d598 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055e42fe1cff8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055e42fe1c3a0 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055e42fe1bf18 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:43:16.096455 #1672]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055e430287c00 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055e430287bd8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:43:16.096773 #1672]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055e430284230 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:43:19.108999 #1672]  INFO -- : 
+
+pc 
+#<Player:0x000055e430283f10 @name="Y", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:45:11.728513 #1691]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:45:11.730305 #1691]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055578f9d6700 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055578f9d5648 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055578f9d4cc0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055578f9d4ab8 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055578f9d4770 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055578f9d3640 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055578f9d3488 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:45:11.731747 #1691]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055578f9c0680 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055578f9c0630 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:45:11.732159 #1691]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055578fe38e88 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:45:15.151263 #1691]  INFO -- : 
+
+pc 
+#<Player:0x000055578fe38780 @name="Y", @age=12, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T16:45:29.977172 #1701]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T16:45:29.978654 #1701]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005615e3fe8a18 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005615e3fe81a8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005615e3fe73c0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005615e3fe7280 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005615e3fe6fb0 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005615e3fe6c68 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005615e3fe6a38 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T16:45:29.979811 #1701]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005615e3fd49f0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x00005615e3fd48d8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T16:45:29.980130 #1701]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005615e444caf0 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T16:45:33.175055 #1701]  INFO -- : 
+
+pc 
+#<Player:0x00005615e444c708 @name="Y", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:13:00.928022 #179]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:13:00.929671 #179]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005556954af498 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005556954af2e0 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005556954af240 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005556954af178 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005556954af060 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005556954aef48 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005556954aede0 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:13:00.930886 #179]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000555695917bc0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x0000555695917b70 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:13:00.931220 #179]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000555695914358 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:13:03.373932 #179]  INFO -- : 
+
+pc 
+#<Player:0x0000555695917058 @name="Y", @age=14, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:14:03.519663 #202]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:14:03.521824 #202]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055b3d3b91720 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055b3d3b910b8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055b3d3b90f28 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055b3d3b90e38 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055b3d3b90d48 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055b3d3b90c30 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055b3d3b90b40 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:14:03.522487 #202]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055b3d400b5d0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box"], @visited=false>, "thomas_garden"=>#<Room:0x000055b3d400b5a8 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:14:03.522807 #202]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055b3d4008d58 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:14:09.719662 #202]  INFO -- : 
+
+pc 
+#<Player:0x000055b3d40088f8 @name="U", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:14:59.477166 #208]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:14:59.478826 #208]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000056000ee61a90 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000056000ee61928 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000056000ee60640 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000056000ee5ed68 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000056000ee5b5c8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000056000ee5b460 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000056000ee5b348 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x000056000ee5b258 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:14:59.480097 #208]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000056000ee48630 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x000056000ee48590 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:14:59.480416 #208]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000056000f2c09d8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:15:04.488826 #208]  INFO -- : 
+
+pc 
+#<Player:0x000056000f2c05f0 @name="Y", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:15:50.241536 #222]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:15:50.243978 #222]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055cb35e929a0 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055cb35e92900 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055cb35e923b0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055cb35e92298 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055cb35e91b40 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055cb35e91a28 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055cb35e91988 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x000055cb35e918e8 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:15:50.244610 #222]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055cb3630b9f0 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x000055cb3630b978 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:15:50.244927 #222]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055cb36309808 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:15:52.894160 #222]  INFO -- : 
+
+pc 
+#<Player:0x000055cb363093f8 @name="Y", @age=13, @health=100, @inventory=["ACME key", "red sword"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:16:08.297196 #222]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:16:13.394930 #222]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:16:42.692505 #222]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:17:04.415294 #232]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:17:04.417066 #232]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005603dd6ddf80 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005603dd6dddf0 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005603dd6ddd28 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005603dd6ddc10 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005603dd6dda30 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005603dd6dd940 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005603dd6dd800 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x00005603dd6db460 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:17:04.418358 #232]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005603dd6c4b48 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x00005603dd6c4a30 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:17:04.418694 #232]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005603ddb3d260 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:17:07.025337 #232]  INFO -- : 
+
+pc 
+#<Player:0x00005603ddb3c680 @name="Y", @age=13, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:17:10.729477 #232]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:23:02.923388 #448]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:23:02.925560 #448]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055d7a670fbb0 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055d7a670f728 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055d7a670f1b0 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055d7a670ed00 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055d7a670e6c0 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055d7a670e4e0 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055d7a670e030 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x000055d7a670de28 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:23:02.926131 #448]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055d7a6b84f60 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x000055d7a6b85488 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:23:02.926428 #448]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055d7a6b816f8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:23:05.441500 #448]  INFO -- : 
+
+pc 
+#<Player:0x000055d7a6b812c0 @name="Y", @age=12, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:23:13.402312 #448]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:23:20.754004 #448]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:23:32.466915 #455]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:23:32.468898 #455]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x000055753cc0b488 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x000055753cc0b1e0 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x000055753cc0b118 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x000055753cc0b0a0 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x000055753cc0ae70 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x000055753cc0ad58 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x000055753cc0abc8 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x000055753cc0ab00 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:23:32.470097 #455]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x000055753cbf8450 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x000055753cbf8428 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:23:32.470432 #455]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x000055753d075528 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:23:34.556868 #455]  INFO -- : 
+
+pc 
+#<Player:0x000055753d074330 @name="Y", @age=12, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:23:40.219455 #455]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:24:01.938346 #463]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:24:01.940182 #463]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005596740c4b98 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005596740c3bf8 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005596740c29d8 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005596740c2640 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005596740c1ee8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005596740c1d80 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005596740c1c68 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x00005596740c1ad8 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:24:01.941341 #463]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005596740a9078 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x00005596740a8fb0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:24:01.941662 #463]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000559674520b38 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:24:06.715422 #463]  INFO -- : 
+
+pc 
+#<Player:0x00005596745207a0 @name="N", @age=12, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:24:11.697198 #463]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:26:40.292366 #589]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:26:40.297084 #589]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005556c3c73ea8 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005556c3c73e08 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005556c3c73c50 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005556c3c73bb0 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005556c3c73700 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005556c3c72fd0 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005556c3c72bc0 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x00005556c3c72670 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:26:40.297753 #589]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005556c40e8178 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x00005556c40e8150 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:26:40.298077 #589]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005556c40e5860 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:26:43.875487 #589]  INFO -- : 
+
+pc 
+#<Player:0x00005556c40e5400 @name="Y", @age=12, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:26:48.572883 #589]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:27:53.124444 #633]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:27:53.126795 #633]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x00005599560e6c90 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x00005599560e3d10 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x00005599560e3a90 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x00005599560e3108 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x00005599560e2de8 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x00005599560e2870 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x00005599560e2550 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x00005599560e2410 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:27:53.127456 #633]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x0000559956558198 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x0000559956558148 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:27:53.127897 #633]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x0000559956555920 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:27:56.297251 #633]  INFO -- : 
+
+pc 
+#<Player:0x00005599565554c0 @name="R", @age=15, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:28:01.271962 #633]  INFO -- : 
+ player input 
+{#something}
+I, [2018-10-02T17:28:29.824686 #649]  INFO -- : ----------------------------
+Game starts
+I, [2018-10-02T17:28:29.826435 #649]  INFO -- : 
+
+Things 
+{"tool cupboard"=>#<Thing:0x0000560074c4f890 @id="tool cupboard", @desc="A cheap cupboard marked 'Tools'", @container=true, @weight=10000, @in=["assorted_tools", "papers"], @on=[], @open=false, @locked=true, @key="ACME key", @text=nil>, "wooden chair"=>#<Thing:0x0000560074c4f7f0 @id="wooden chair", @desc="A boring wooden chair", @container=false, @weight=12, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "table"=>#<Thing:0x0000560074c4f638 @id="table", @desc="An old table that could have came from Narnia.", @container=false, @weight=20, @in=[], @on=["red box"], @open=false, @locked=false, @key=nil, @text=nil>, "post-it note"=>#<Thing:0x0000560074c4f4f8 @id="post-it note", @desc="A yellow sticky note", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "red box"=>#<Thing:0x0000560074c4f368 @id="red box", @desc="A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently", @container=false, @weight=100, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "ACME key"=>#<Thing:0x0000560074c4f188 @id="ACME key", @desc="ACME key, medium size", @container=false, @weight=0, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>, "student desk"=>#<Thing:0x0000560074c4ef58 @id="student desk", @desc="A simple student desk", @container=false, @weight=10000, @in=[], @on=["ACME key"], @open=false, @locked=false, @key=nil, @text=nil>, "orange thing"=>#<Thing:0x0000560074c4ed28 @id="orange thing", @desc="orange", @container=false, @weight=1, @in=[], @on=[], @open=false, @locked=false, @key=nil, @text=nil>}
+
+I, [2018-10-02T17:28:29.827589 #649]  INFO -- : 
+
+rooms 
+{"thomas_shed"=>#<Room:0x00005600750c8a48 @short_desc="Thomas shed", @long_desc="This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.", @north=nil, @south=[nil, "thomas_garden"], @east=nil, @west=nil, @up=nil, @down=nil, @is_here=["tool cupboard", "wooden chair", "table", "red box", "orange thing"], @visited=false>, "thomas_garden"=>#<Room:0x00005600750c89d0 @short_desc="Thomas house, the garden", @long_desc="This is just an ordinary garden, Thomas' garden or, rather, Thomas' parents garden to be precise. He wasn't here the last time you were here, and he isn't still here either.", @north=[nil, "thomas_shed"], @south=nil, @east=nil, @west=nil, @up=nil, @down=nil, @is_here=[], @visited=nil>}
+
+I, [2018-10-02T17:28:29.827928 #649]  INFO -- : 
+
+portals 
+{"door_thomas_to_red_train"=>#<Portal:0x00005600750c5ed8 @desc="A basic door, though Thomas used to believe it's built from Narnian wood", @locked=true, @key="key25", @weight=10000>}
+
+I, [2018-10-02T17:28:33.509909 #649]  INFO -- : 
+
+pc 
+#<Player:0x00005600750c5b18 @name="E", @age=14, @health=100, @inventory=["ACME key"], @in_hands=nil, @has_backpack=true>
+
+I, [2018-10-02T17:28:38.678137 #649]  INFO -- : 
+ player input 
+{#something}

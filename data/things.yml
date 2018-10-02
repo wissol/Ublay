@@ -1,0 +1,37 @@
+# http://yaml.org/YAML_for_ruby.html
+# Use two words keys
+# Keys should appear in description 
+tool cupboard:
+  desc: A cheap cupboard marked 'Tools'
+  in_me: [assorted_tools, papers]
+  weight: 10,000
+  container: true
+  open: false
+  locked: true
+  key: ACME key
+wooden chair:
+  id: wooden chair
+  desc: A boring wooden chair
+  weight: 12
+table:
+  desc: An old table that could have came from Narnia.
+  weight: 20
+  on_me: [red box]
+post-it note:
+  desc: A yellow sticky note 
+  weight: 0
+  text: 
+red box:
+  desc: A red box of interesting design, solidly fixed to the table/wall (?). Despite looking like a box it can't be opened# --- never mind describe this differently
+  weight: 100
+  container: false
+ACME key:
+  desc: ACME key, medium size
+  weight: 0
+student desk:
+  desc: A simple student desk
+  weight: 10,000
+  on_me: [ACME key]
+orange thing:
+  desc: orange
+  

@@ -1,0 +1,4 @@
+door_thomas_to_red_train:
+  desc: A basic door, though Thomas used to believe it's built from Narnian wood
+  locked: true
+  key: key25
