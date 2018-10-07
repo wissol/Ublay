@@ -21,7 +21,7 @@ class Array
 
   def make_list(conjuction="and",calls=0)
     if self.size > 1
-      "#{self.head.insert_indeterminate_article}, #{self.tail.make_list(calls=1)}"
+      "#{self.head.insert_indeterminate_article}, #{self.tail.make_list(conjuction, calls=1)}"
     elsif calls > 0
       "#{conjuction} #{self.head.insert_indeterminate_article}"
     else

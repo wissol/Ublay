@@ -17,16 +17,18 @@
 ----2 october
 - things display now its open/closed status
 - things can be opened (don't check if locked though)
+----3 october 
+- improved input output
+- added artificial delay on computer response to make it more natural
+- added find_thing_from_player_input(input_string)
+--- 4 october 
+- open / close fully implemented (hopefuylly)
+- room full description now list things on another things and things in open containers
+- improved look verb (now it includes error not found message)
+- added read verb
+- added drop verb
 # To do
-- open thing (things must check if locked)
-- close
-- read
 
-# ---- make this into a function 
-   predicate = predicate.remove_small_words  
-    candidates = compare_phrases_with_words(whats_here, predicate)
-    if candidates[:found].size == 1
-        my_thing = @things[candidates[:found].head]
-        # what if more than one cadidate????
-# end make this into a function
-
+- push
+- put 
+- other verbs

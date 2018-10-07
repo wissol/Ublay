@@ -19,12 +19,13 @@ class Game
     @pc = create_pc
     $LOG.info("\n\npc \n" + @pc.inspect  + "\n" )
     @turns = 0
+ 
   end    
 
   def load_things
     t = YAML.load_file('data/things.yml')
     output = {}
-    t.each {|key,value| output[key] = Thing.new(value,key)}
+    t.each {|key,value| output[key.downcase] = Thing.new(value,key.downcase)}
     output
   end 
 
@@ -42,8 +43,30 @@ class Game
     output
   end   
 
-  def whats_here
-    @actual_room.is_here
+  def list_things_in_open_containers
+    output = []
+    @actual_room.is_here.each {|thing_id| output += @things[thing_id].in_me}
+    output
+  end
+
+  def list_things_on_another_things
+    output= []
+    @actual_room.is_here.each {|thing_id| output += @things[thing_id].on_me}
+    output
+  end
+
+  def whats_here(search_type=:all)
+    #puts ( @actual_room.is_here + @pc.inventory).inspect
+    output_string = ""
+    case search_type
+    when :inventory
+       # I'm only searching on the inventory for the time bein
+       puts "here #{@pc.inventory}"
+      @pc.inventory
+    else #all
+      @actual_room.is_here + @pc.inventory + list_things_in_open_containers + list_things_on_another_things
+    end 
+
   end 
 
   def parse(something)
@@ -51,7 +74,9 @@ class Game
    # something -> Array of strings (words), usually introduced by the player 
     verb = something.head
     predicate = something.tail
-    $LOG.info("\n player input \n{#something}" )
+    $LOG.info("\n player input \n#{something}" )
+    $LOG.info("\n player input \n#{predicate}" )
+    
     case verb
     when "answer"
       answer
@@ -66,7 +91,7 @@ class Game
     when "drink"
       drink
     when "drop"
-      drop
+      drop predicate
     when "eat"
       eat  
     # --- examine synonym for look
@@ -77,7 +102,12 @@ class Game
     when "hear", "listen"
       listen   
     when "hold", "grab"
-      hold(predicate.join(" "))
+      unless predicate == []
+        hold(predicate.join(" "))
+      else 
+        "What do you want to grab?".tell 
+        parse(read_player_input)
+      end
     when "i", "inventory"
       show_inventory
     when "l", "load", "restore"
@@ -120,6 +150,8 @@ class Game
       put 
     when "q", "quit"
       quit
+    when "read"
+      read predicate
     when "restart"  
       restart  
     # restore synomym for load
@@ -154,7 +186,7 @@ class Game
     when "wait"
       wait
     when "wear"
-      wear
+      wear predicate
     else 
       me_no_understand      
     end  
@@ -167,7 +199,8 @@ class Game
 
   def game_credits
     "# Lost in Ublay".tell
-    " An interactive fiction game v0.1".tell
+    "By Miguel de Luis"
+    " An interactive fiction game v0.1 from <Midge Islands Games>".tell
   end  
 
   def show_intro(who)
@@ -187,7 +220,7 @@ class Game
       "You are not Thomas, so who are you?".tell
       pc.create_random_character(read_player_input.join(" ").capitalize) 
     else
-      "Thomas game play not yet developed, sorry\n Let's pretend you are not Thomas :D\nSo make up a name".tell 
+      "! Thomas game play not yet developed, sorry\n Let's pretend you are not Thomas :D\nSo make up a name".tell 
       pc.create_random_character(read_player_input.join(" ").capitalize)  
     end
     pc
@@ -196,7 +229,7 @@ class Game
   def main
     if @just_started && ! over?      
       show_intro("not_thomas")
-      @first_room.show(@things)
+      @first_room.enter(@things)
       @actual_room = @first_room
       @just_started = false 
     end

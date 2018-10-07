@@ -2,7 +2,7 @@
 class Thing 
   # Contains the "objects" of the game world: a key, 
 
-  attr_reader :desc, :on, :in, :weight, :open
+  attr_reader :desc, :on, :in, :weight, :open, :text
   def initialize(x, id) 
     # x being a hash 
     @id = id
@@ -18,7 +18,7 @@ class Thing
       $LOG.debug("Locked item #{@desc} but no key assigned, check things.yml")
       raise "Locked item #{@desc} but no key assigned, check things.yml"
     end
-    @text = x["text"]
+    @text = x["text"] == nil ? nil : x["text"]
   end 
 
   def openable?
@@ -27,30 +27,50 @@ class Thing
 
   def open_me 
     unless @container == false
-      @open = true
-      "#{@id.capitalize} open.".tell 
+      if @locked 
+        "It seems to be locked".tell
+      else
+        @open = true
+        "#{@id.capitalize} open.".tell 
+      end
     else 
-      ["Why would you like to open the <#{@id}>.", "I shot the Sheriff, but I can't open the <#{@id}>"].sample.tell
+      "You tried but you couldn't open that <#{@id}>, because, there's nothing to be opened here.".tell
     end
   end 
 
   def close_me
     unless @container == false
-      @open = false
-      "#{@id.capitalize} closed.".tell 
+      if @locked || @closed
+        "It is already closed".tell 
+      else
+        @open = false
+        "#{@id.capitalize} closed.".tell 
+      end
     else 
       "Something that cannot be closed\nCan it be opened?\nI wonder.\n\nAnd it turns out that the <#{@id}> can neither be opened or closed".tell
     end
   end 
-  
- 
+
 
   def list
-    " - #{@desc}".tell
+    " - #{@id}".tell
   end
 
+  def list_things_in_me 
+    @open ? "In #{@id}:#{@in.make_list("and")}" : ""
+  end
+
+  def in_me 
+    @in
+  end 
+
+  def on_me
+    @on 
+  end
+
+
   def list_things_on_me 
-    @on.make_list("and")
+    @on.size > 0 ? "On the #{@id}: #{@on.make_list("and")}" : ""
   end
 
   def tell
@@ -62,7 +82,7 @@ class Thing
     if @container
       out_desc += " It is #{@open ? 'open' : 'closed'}."
     end 
-    out_desc
+    out_desc 
   end
 
 end

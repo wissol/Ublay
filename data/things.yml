@@ -3,11 +3,11 @@
 # Keys should appear in description 
 tool cupboard:
   desc: A cheap cupboard marked 'Tools'
-  in_me: [assorted_tools, papers]
+  in_me: [assorted tools, papers]
   weight: 10,000
   container: true
-  open: false
-  locked: true
+  open: true
+  locked: false
   key: ACME key
 wooden chair:
   id: wooden chair
@@ -31,7 +31,11 @@ ACME key:
 student desk:
   desc: A simple student desk
   weight: 10,000
-  on_me: [ACME key]
+  on_me: []
 orange thing:
   desc: orange
-  
+assorted tools:
+  desc: "some random tools, you have no use for them" 
+papers:
+  desc: "something you might like to read"
+  text: "papers"

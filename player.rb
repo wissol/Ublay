@@ -4,7 +4,7 @@ class Player
     @name = "Thomas"
     @age = 14
     @health = 100
-    @inventory = ["ACME key"]
+    @inventory = ["acme key"]
     @in_hands = nil
     @has_backpack = true
   end
@@ -34,7 +34,9 @@ class Player
     @inventory.push(something_key)
   end
 
-
+  def remove_from_inventory(something_key)
+    @inventory.delete(something_key)
+  end
 
   def inc_health(x)
     @health = (@health + x) > 100 ? 100 : @health + x
@@ -43,7 +45,6 @@ class Player
   def suffer_injury(x)
     @health -= x
   end
-
 
   def is_dead?
     @health < 0

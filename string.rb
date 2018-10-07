@@ -1,5 +1,6 @@
 
 class String
+
   def tail 
     self[1..-1]
   end
@@ -18,7 +19,7 @@ class String
 
   def fake_type
     if self.size > 0
-      sleep(0.3)
+      sleep(0.15)
       print self.first_char
       self.tail.fake_type
     else 
@@ -27,15 +28,17 @@ class String
   end
   
   def paragraphs
-    # I'm creating an alias for lines as paragraphs is more appropiate in this context 
+    # An alias for lines as paragraphs is more appropiate in this context 
     self.lines 
   end
 
   def is_header?
+    # Header strings should be marked such as "# Whatever the ever"
     self.first_char == "#"
   end
 
   def is_error?
+    # Error (from player input) strings to should be marked such as "# Whatever the ever"
     self.first_char == "!"
   end
 
@@ -44,52 +47,63 @@ class String
   end
 
   def underline
-      "\e[4m#{self}\e[24m"
+    # underlines a whole string
+    "\e[4m#{self}\e[24m"
+  end
+
+  def underline_keywords
+    # underlines a substring marked with <> e.g. -> <underline me>
+    self.gsub("<", "\e[4m").gsub(">", "\e[0m")
   end
 
   def remove_punctuation
-    self.delete(".,;:´¨{}[]!\"\#$¢%&/()=?¿'¿¡*`<>")
+    # removes punctuation marks, useful for player input
+    self.delete(".,;:´¨{}[]!\"\#$¢%&/()=?¿'¡*`<>")
   end
     
   def format_as_header
+    # see is_header function above
     text = self[2..-1]
     text[0] = text[0].capitalize
     "\n #{text.bold.underline}\n" 
   end  
 
   def format_as_error
+    # see is_error function above
     "\e[31m#{self[2..-1].underline}\e[0m" 
   end
-
-  def blue
-    "\e[#{35}m#{self}\e[0m"
-  end
-
-  def tell
-  
-    puts 
-     x = self
-     x = x.format_as_error if x.is_error?
-     x.paragraphs.each {
-      |paragraph| 
-      paragraph.get_lines.each {
-        |line|
-        line = line.format_as_header if line.is_header? 
-        line = line.gsub("<", "\e[44m\e[4m") # 44 -> background blue, 4m underline 
-        line = line.gsub(">", "\e[24m\e[0m") # closes background and underline codes
-        print line
+ 
+  def tell(line_by_line=false)
+    # prints a large string on the command line in a standarized format
+    # i.e. what I think it's readable.
+    unless self == ""
+      sleep(0.1)
+      puts 
+      x = self
+      x = x.format_as_error if x.is_error?
+      x.paragraphs.each {
+        |paragraph| 
+        paragraph.get_lines.each {
+          |line|
+          line = line.format_as_header if line.is_header? 
+          print line.underline_keywords 
+          sleep(0.03)
+          
+        }
+        gets if line_by_line
+        puts
       }
-      puts
-    }
+    end
   end
 
   def insert_indeterminate_article 
     if ["a","e","i","o","u"].include?(self.first_char)
-      "an #{self}"
+      "an <#{self}>"
     else 
-      "a #{self}"
+      "a <#{self}>"
     end
   end
+
   def ask_yes_no
     self.tell 
     raw_answer = read_player_input
@@ -113,10 +127,6 @@ class String
       self.get_lines(line_width+1, output)
     end  
     output 
-  end
-
-  
-
-   
+  end   
 
 end

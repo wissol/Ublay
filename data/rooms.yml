@@ -3,7 +3,7 @@ thomas_shed:
   short_desc: Thomas shed 
   long_desc: This is Thomas' shed, looking as neat as it possibly can. The <tool cupboard> is closed, nothing on the floor, a <wooden chair> is at the <table>, and, nailed onto it, there's a strange <red box.> Most surprisingly, Thomas is nowhere to be seen.
   south: [~, thomas_garden] 
-  is_here: [tool cupboard, wooden chair, table, red box, orange thing]
+  is_here: [tool cupboard, wooden chair, table]
   visited: false
 thomas_garden:
   short_desc: "Thomas house, the garden"
